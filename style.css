@@ -115,3 +115,8 @@ ul li:hover {
 .fun-time h2 {
   border-color: #fff;
 }
+
+footer {
+	margin-top: 30px;
+	font-size: 1rem;
+}

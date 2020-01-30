@@ -37,6 +37,7 @@ body {
   padding: 50px;
   font-family: 'Standard', sans-serif;
   position: relative;
+	transition: 0.5s linear all;
 }
 
 h1, h2, h3 {
@@ -101,6 +102,7 @@ ul li:hover {
 }
 
 .fun-time {
+	transition: 0.5s linear all;
   background: red; /* For browsers that do not support gradients */
   background: -webkit-linear-gradient(left, yellow, orange, cyan, blue, violet, pink); /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(right, yellow, orange, cyan, blue, violet, pink); /* For Opera 11.1 to 12.0 */

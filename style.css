@@ -1,0 +1,117 @@
+@font-face {
+	font-family: 'Standard';
+	src: url("./fonts/Standard.ttf") format('truetype');
+}
+
+* {
+  box-sizing: border-box;
+  animation: 0.5s fade-in linear;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.page-wrapper {
+  border: 1px solid #333;
+  padding: 20px;
+  height: 80vh;
+  overflow-y: scroll;
+}
+
+body {
+  font-size: 1.8rem;
+  background-color: #f0ece5;
+  color: #333;
+  margin: 0;
+  padding: 50px;
+  font-family: 'Standard', sans-serif;
+  position: relative;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+h1 {
+  margin: 40vh 0 80px;
+  text-align: center;
+}
+
+h2 {
+  border-bottom: 2px solid #333;
+  padding-bottom: 4px;
+}
+
+section {
+  display: flex;
+  justify-content: space-between;
+}
+
+article {
+  width: 31%;
+}
+
+@media only screen and (max-width: 767px) {
+  body {
+    padding: 30px;
+    font-size: 1.3rem;
+  }
+
+  section {
+    flex-wrap: wrap;
+  }
+
+  article {
+    width: 100%;
+  }
+}
+
+ul li {
+  padding: 8px 0;
+  user-select: all;
+  transition-delay: 2s;
+}
+
+ul li:hover {
+  transition: font-style 1s;
+  transition-delay: 2s;
+  font-style: italic;
+}
+
+#fun {
+  position: fixed;
+  right: 20px;
+  top: 20px;
+}
+
+#fun::before {
+  content: '+';
+}
+
+.fun-time #fun::before {
+  content: '—';
+}
+
+.fun-time {
+  background: red; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, yellow, orange, cyan, blue, violet, pink); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, yellow, orange, cyan, blue, violet, pink); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, yellow, orange, cyan, blue, violet, pink); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(yellow 0%, orange 20%, cyan 40%, blue 60%, violet 80%, pink 100%); /* Standard syntax (must be last) */
+  color: #fff;
+}
+
+.fun-time h2 {
+  border-color: #fff;
+}

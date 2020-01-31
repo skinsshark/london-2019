@@ -120,14 +120,18 @@ article {
 ul li {
   padding: 8px 0;
   user-select: all;
-	cursor: crosshair;
-}
-
-ul li:hover {
-  font-style: italic;
+	cursor: default;
 }
 
 @media only screen and (min-width: 768px) {
+	ul li.look {
+		cursor: crosshair;
+	}
+	
+	ul li:hover {
+	  font-style: italic;
+	}
+
 	li.look::after {
 		content: '\27F6';
 	}

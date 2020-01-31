@@ -90,6 +90,10 @@ section {
 	right: 13%;
 }
 
+.fun-time #photo {
+	border-color: #fff;
+}
+
 article {
   width: 31%;
 }

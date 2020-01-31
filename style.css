@@ -79,6 +79,7 @@ section {
 	cursor: crosshair;
 	line-height: 120vh;
 	font-size: 1rem;
+	font-style: italic;
 }
 
 #photo.left {
@@ -122,6 +123,10 @@ ul li:hover {
   font-style: italic;
 }
 
+li.look::after {
+	content: '\27F6';
+}
+
 #fun {
   position: fixed;
   right: 20px;
@@ -129,11 +134,11 @@ ul li:hover {
 }
 
 #fun::before {
-  content: '+';
+  content: '\263A';
 }
 
 .fun-time #fun::before {
-  content: '—';
+  content: '\2639';
 }
 
 .fun-time {

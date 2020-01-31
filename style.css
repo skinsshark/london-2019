@@ -3,6 +3,9 @@
 	src: url("./fonts/Standard.ttf") format('truetype');
 }
 
+::-moz-selection { background: #fff; }
+::selection { background: #fff; }
+
 * {
   box-sizing: border-box;
   animation: 0.5s fade-in linear;

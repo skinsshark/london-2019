@@ -123,8 +123,10 @@ ul li:hover {
   font-style: italic;
 }
 
-li.look::after {
-	content: '\27F6';
+@media only screen and (min-width: 768px) {
+	li.look::after {
+		content: '\27F6';
+	}
 }
 
 #fun {

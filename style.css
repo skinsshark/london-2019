@@ -136,7 +136,7 @@ ul li:hover {
 }
 
 #fun::before {
-  content: '\263A';
+  content: '+';
 }
 
 .fun-time #fun::before {

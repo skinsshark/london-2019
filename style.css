@@ -59,6 +59,33 @@ section {
   justify-content: space-between;
 }
 
+#photo {
+	display: none;
+	position: fixed;
+	top: 20vh;
+	width: 40%;
+	height: 60%;
+	border: 2px solid #333;
+	background-color: #fff;
+	background: url('./images/columbia-flower-market.jpg') center center;
+	background-size: cover;
+	text-align: center;
+}
+
+#photo p {
+	cursor: crosshair;
+	line-height: 120vh;
+	font-size: 1rem;
+}
+
+#photo.left {
+	left: 13%;
+}
+
+#photo.right {
+	right: 13%;
+}
+
 article {
   width: 31%;
 }
@@ -76,11 +103,16 @@ article {
   article {
     width: 100%;
   }
+
+	#photo {
+		display: none !important;
+	}
 }
 
 ul li {
   padding: 8px 0;
   user-select: all;
+	cursor: crosshair;
 }
 
 ul li:hover {

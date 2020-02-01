@@ -44,3 +44,9 @@ Array.from(food_items).map(food => {
     }, 200);
   };
 })
+
+document.addEventListener('keyup', (e) => {
+  if (e.keyCode === 27) {
+    closeGallery();
+  }
+});
